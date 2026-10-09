@@ -154,12 +154,6 @@ python scripts/predict.py --model runs/pad_mm_effb0_isic/seed0 --image photo.jpg
 - Анализ справедливости сделан по фототипам, размеченным в самом PAD-UFES-20, а не на DDI / Fitzpatrick17k: у этих наборов другой тип снимков, и доступ к DDI выдаётся по заявке.
 - Уровень 2 (дерматоскопия, HAM10000) вынесен в магистерскую диссертацию.
 
-## Вклад участников
-
-| Участник | Роль | Что сделано |
-| --- | --- | --- |
-| Тулебаев Дулат | Единственный автор | Постановка задачи, данные и EDA, модели и эксперименты, анализ, демо, отчёт, презентация |
-
 ## Источники
 
 1. Adilova A. et al. Cutaneous melanoma in Kazakhstan: epidemiological trends and economic burden. *Archives of Public Health* 84, 30 (2026).
