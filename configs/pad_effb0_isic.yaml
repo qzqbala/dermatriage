@@ -1,0 +1,7 @@
+# Только фото: EfficientNet-B0, предобученный на ISIC 2024 (SLICE-3D)
+base: pad_base.yaml
+model:
+  kind: image
+  backbone: efficientnet_b0
+  init: isic
+  isic_encoder: runs/isic_pretrain_efficientnet_b0/seed0/encoder.pt

@@ -1,0 +1,68 @@
+{
+  "pad": {
+    "images": 2298,
+    "patients": 1373,
+    "lesions": 1641,
+    "diagnoses": {
+      "BCC": 845,
+      "ACK": 730,
+      "NEV": 244,
+      "SEK": 235,
+      "SCC": 192,
+      "MEL": 52
+    },
+    "malignant_share": 0.47389033942558745,
+    "images_per_patient_max": 10,
+    "patients_with_multiple_images": 544,
+    "fitzpatrick_known": 1494,
+    "image_sizes": {
+      "checked": 600,
+      "min_side_median": 784,
+      "min_side_min": 167,
+      "max_side_max": 3120
+    },
+    "shortcut_check": {
+      "auc_missingness_only": 0.8658469802164817,
+      "warning": true,
+      "columns": [
+        "smoke",
+        "drink",
+        "background_father",
+        "background_mother",
+        "age",
+        "pesticide",
+        "gender",
+        "skin_cancer_history",
+        "cancer_history",
+        "has_piped_water",
+        "has_sewage_system",
+        "fitzpatrick",
+        "region",
+        "diameter_1",
+        "diameter_2",
+        "itch",
+        "grew",
+        "hurt",
+        "changed",
+        "bleed",
+        "elevation",
+        "biopsed"
+      ]
+    }
+  },
+  "isic": {
+    "images": 401059,
+    "malignant": 393,
+    "malignant_share": 0.0009799056996601498,
+    "patients": 1042,
+    "patients_with_malignant": 259,
+    "malignant_share_by_site": {
+      "anterior torso": 0.00093,
+      "head/neck": 0.00648,
+      "lower extremity": 0.00071,
+      "posterior torso": 0.00084,
+      "upper extremity": 0.00081,
+      "неизв.": 0.0
+    }
+  }
+}

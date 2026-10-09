@@ -1,0 +1,43 @@
+{
+  "limits": {
+    "min_side": 128,
+    "min_sharpness": 8.664682159423828,
+    "min_brightness": 87.97190036773682,
+    "max_brightness": 202.0416976928711,
+    "max_overexposed": 0.05
+  },
+  "calibrated_on": "PAD-UFES-20 train, 1615 снимков",
+  "train_rejected_share": 0.021052631578947368,
+  "stats": {
+    "sharpness": {
+      "count": 1615.0,
+      "mean": 190.03,
+      "std": 308.5,
+      "min": 3.5,
+      "25%": 34.48,
+      "50%": 75.08,
+      "75%": 203.61,
+      "max": 3280.83
+    },
+    "brightness": {
+      "count": 1615.0,
+      "mean": 143.01,
+      "std": 22.23,
+      "min": 74.49,
+      "25%": 128.44,
+      "50%": 142.76,
+      "75%": 157.55,
+      "max": 219.47
+    },
+    "overexposed": {
+      "count": 1615.0,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 0.08
+    }
+  }
+}

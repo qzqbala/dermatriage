@@ -1,0 +1,47 @@
+# Базовый конфиг уровня 1: PAD-UFES-20, фото со смартфона.
+# Остальные конфиги наследуют его через `base:` и меняют только нужное.
+seed: 0
+device: auto            # auto | cuda | cpu
+deterministic: false    # true — полностью воспроизводимо на той же GPU, но медленнее
+
+data:
+  pad_root: data/pad_ufes_20
+  positive_classes: [BCC, MEL, SCC]   # «направить»: базальноклеточный, меланома, плоскоклеточный
+  img_size: 224
+  augment: phone        # phone | basic | none — имитация съёмки на смартфон
+  num_workers: 4        # на Windows при ошибках поставьте 0
+  cache_images: false   # true — держать снимки в памяти (~2–3 ГБ ОЗУ), быстрее
+  tabular:              # поля анкеты, которые фельдшер может спросить у пациента
+    numeric: [age]
+    categorical: [gender, region]
+    ternary: [itch, grew, hurt, changed, bleed, elevation]
+
+model:
+  kind: image           # image | multimodal
+  backbone: efficientnet_b0
+  init: imagenet        # imagenet | isic | scratch
+  isic_encoder: null    # путь к encoder.pt, если init: isic
+  dropout: 0.3
+
+train:
+  epochs: 25
+  batch_size: 32
+  lr_encoder: 1.0e-4
+  lr_head: 1.0e-3
+  weight_decay: 1.0e-4
+  warmup_epochs: 1
+  loss: bce             # bce | focal
+  pos_weight: auto      # auto = доля отрицательных / доля положительных на train
+  monitor: auc          # по какой валидационной метрике выбирать лучшую эпоху
+  patience: 6
+  grad_clip: 1.0
+  amp: true
+
+eval:
+  target_sensitivity: 0.90
+  tta: true             # усреднение по отражениям снимка на val/test
+  n_boot: 1000          # бутстреп для 95% доверительного интервала AUC
+
+output:
+  runs_dir: runs
+  name: null            # по умолчанию — имя файла конфига

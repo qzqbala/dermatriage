@@ -1,0 +1,3 @@
+# Фото + анкета: EfficientNet-B0 (ImageNet) + MLP анкеты, позднее слияние
+base: pad_base.yaml
+model: {kind: multimodal, backbone: efficientnet_b0, init: imagenet, tab_hidden: 64, fusion_hidden: 256, tab_dropout: 0.1}

@@ -1,0 +1,3 @@
+# Только фото: EfficientNet-B0, веса ImageNet (основной image-baseline)
+base: pad_base.yaml
+model: {kind: image, backbone: efficientnet_b0, init: imagenet}

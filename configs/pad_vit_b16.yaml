@@ -1,0 +1,4 @@
+# Только фото: Vision Transformer ViT-B/16, веса ImageNet-21k → 1k
+base: pad_base.yaml
+model: {kind: image, backbone: vit_base_patch16_224, init: imagenet, drop_path_rate: 0.1}
+train: {lr_encoder: 3.0e-5, lr_head: 5.0e-4, batch_size: 32}

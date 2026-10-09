@@ -1,0 +1,3 @@
+# Только фото: ResNet-50, веса ImageNet
+base: pad_base.yaml
+model: {kind: image, backbone: resnet50, init: imagenet}

@@ -1,0 +1,10 @@
+# Фото + анкета: EfficientNet-B0, предобученный на ISIC 2024 + MLP анкеты (кандидат в финальную модель)
+base: pad_base.yaml
+model:
+  kind: multimodal
+  backbone: efficientnet_b0
+  init: isic
+  isic_encoder: runs/isic_pretrain_efficientnet_b0/seed0/encoder.pt
+  tab_hidden: 64
+  fusion_hidden: 256
+  tab_dropout: 0.1

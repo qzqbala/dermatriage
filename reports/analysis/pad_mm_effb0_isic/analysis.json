@@ -1,0 +1,110 @@
+{
+  "per_diagnosis": [
+    {
+      "group": "ACK",
+      "n": 320,
+      "malignant": 0,
+      "referral_rate": 0.13725160014329887,
+      "sensitivity": null,
+      "specificity": 0.862748399856701,
+      "auc": null
+    },
+    {
+      "group": "BCC",
+      "n": 402,
+      "malignant": 402,
+      "referral_rate": 0.946649771833382,
+      "sensitivity": 0.946649771833382,
+      "specificity": null,
+      "auc": null
+    },
+    {
+      "group": "MEL",
+      "n": 18,
+      "malignant": 18,
+      "referral_rate": 0.6222222222222222,
+      "sensitivity": 0.6222222222222222,
+      "specificity": null,
+      "auc": null
+    },
+    {
+      "group": "NEV",
+      "n": 113,
+      "malignant": 0,
+      "referral_rate": 0.10275488400488401,
+      "sensitivity": null,
+      "specificity": 0.897245115995116,
+      "auc": null
+    },
+    {
+      "group": "SCC",
+      "n": 69,
+      "malignant": 69,
+      "referral_rate": 0.8824561403508772,
+      "sensitivity": 0.8824561403508772,
+      "specificity": null,
+      "auc": null
+    },
+    {
+      "group": "SEK",
+      "n": 108,
+      "malignant": 0,
+      "referral_rate": 0.04606034606034606,
+      "sensitivity": null,
+      "specificity": 0.953939653939654,
+      "auc": null
+    }
+  ],
+  "fairness": [
+    {
+      "group": "I–II",
+      "n": 423,
+      "malignant": 319,
+      "referral_rate": 0.7709150794445797,
+      "sensitivity": 0.9251421834515082,
+      "specificity": 0.7038480038480038,
+      "auc": 0.9113392001804622
+    },
+    {
+      "group": "III",
+      "n": 202,
+      "malignant": 150,
+      "referral_rate": 0.7979994625030317,
+      "sensitivity": 0.9366096866096866,
+      "specificity": 0.5905662964486494,
+      "auc": 0.8737634007241851
+    },
+    {
+      "group": "IV–VI",
+      "n": 34,
+      "malignant": 20,
+      "referral_rate": 0.6814814814814815,
+      "sensitivity": 0.8888888888888888,
+      "specificity": 0.6,
+      "auc": 0.9496296296296297
+    },
+    {
+      "group": "неизв.",
+      "n": 371,
+      "malignant": 0,
+      "referral_rate": 0.01366120218579235,
+      "sensitivity": null,
+      "specificity": 0.9863387978142076,
+      "auc": null
+    }
+  ],
+  "confusion_seed": {
+    "threshold": 0.3880240321159363,
+    "sensitivity": 0.9506172839506173,
+    "specificity": 0.8453038674033149,
+    "ppv": 0.8461538461538461,
+    "npv": 0.9503105590062112,
+    "balanced_accuracy": 0.8979605756769661,
+    "f1": 0.8953488372093024,
+    "referral_rate": 0.5306122448979592,
+    "tp": 154,
+    "fp": 28,
+    "tn": 153,
+    "fn": 8
+  }
+}
